@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streaming API - Películas y Series</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #141414; /* Fondo oscuro estilo Netflix */
+            color: white;
+            text-align: center;
+            padding: 40px;
+            margin: 0;
+        }
+        h1 {
+            color: #E50914; /* Rojo Netflix */
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        .tarjeta-streaming {
+            background-color: #181818;
+            max-width: 600px;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+            display: flex;
+            overflow: hidden;
+            text-align: left;
+            border: 1px solid #2f2f2f;
+        }
+        .poster {
+            width: 200px;
+            object-fit: cover;
+        }
+        .info-serie {
+            padding: 20px;
+        }
+        .info-serie h2 {
+            margin-top: 0;
+            color: #fff;
+        }
+        .rating {
+            color: #46d369; /* Verde para la calificación */
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .sinopsis {
+            font-size: 14px;
+            color: #cccccc;
+            line-height: 1.5;
+        }
+        .error {
+            color: #E50914;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Plataforma de Streaming</h1>
+    <p>Consumiendo catálogo en tiempo real...</p>
+
+    <div id="contenedor-streaming">
+        <p>Cargando serie...</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API de Base de Datos - Panel de Control</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            padding: 40px;
+            text-align: center;
+        }
+        h1 {
+            color: #4a154b; /* Color corporativo tipo Slack/Base de datos */
+            margin-bottom: 30px;
+        }
+        .contenedor-tabla {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        th {
+            background-color: #4a154b;
+            color: white;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        .avatar-db {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Base de Datos de Usuarios (API)</h1>
+    <p>Consultando registros del servidor</p>
+
+    <div class="contenedor-tabla">
+        <table>
+            <thead>
+    <tr>
+        <th>ID</th>
+        <th>Avatar</th>
+        <th>Nombre Completo</th>
+        <th>Usuario</th>
+        <th>Correo Electrónico</th>
+    </tr>
+</thead>
+            <tbody id="tabla-usuarios">
+                <tr>
+                    <td colspan="5" style="text-align: center;">Conectando a la base de datos...</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

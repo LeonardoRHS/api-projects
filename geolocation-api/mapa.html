@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Ubicación Actual</title>
+
+    <link rel="stylesheet"
+          href="https://unpkg.com/leaflet/dist/leaflet.css">
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #map{
+            height: 500px;
+            width: 90%;
+            margin: auto;
+            border: 2px solid black;
+        }
+
+        button{
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Mi Ubicación Actual</h1>
+
+    <button onclick="obtenerUbicacion()">
+        Mostrar ubicación
+    </button>
+
+    </button>
+
+    <br><br>
+
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
